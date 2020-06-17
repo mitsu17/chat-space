@@ -1,0 +1,23 @@
+.side-bar
+  .side-bar__user-name
+    .top-items
+      %p.top-items__name
+        mitsu
+      %ul.top-items__icons
+        %li
+          = link_to "#", class: "top-items__icons__btn" do
+            = icon("far", "edit")
+        %li
+          = link_to "#", class: "top-items__icons__btn" do
+            = icon("fas", "cog")
+  .side-bar__group-list
+    .group
+      %p.group__group-name
+        まる三角四角
+      %p.group__meseeage
+        まだメッセージがありません
+        .group
+      %p.group__group-name
+        test
+      %p.group__meseeage
+        まだメッセージがありません
