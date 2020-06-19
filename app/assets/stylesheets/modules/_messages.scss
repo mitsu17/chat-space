@@ -49,7 +49,10 @@ $color_4:#999999;
     padding: 20px 20px 0;
     .group {
       padding-bottom: 40px;
-      color: $color_1;
+      &__group-link {
+        color: $color_1;
+        text-decoration: none;
+      }
       &__group-name {
         font-size: 15px;
         margin-bottom: 5px;
