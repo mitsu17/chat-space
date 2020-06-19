@@ -11,13 +11,10 @@
           = link_to edit_user_path(current_user), class: "top-items__icons__btn" do
             = icon("fas", "cog")
   .side-bar__group-list
-    .group
-      %p.group__group-name
-        まる三角四角
-      %p.group__meseeage
-        まだメッセージがありません
-        .group
-      %p.group__group-name
-        test
-      %p.group__meseeage
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#', class: "group__group-link" do
+          %p.group__group-name
+            = group.name
+          %p.group__meseeage
+            まだメッセージがありません
