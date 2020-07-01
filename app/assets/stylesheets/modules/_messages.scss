@@ -111,6 +111,7 @@ $color_4:#999999;
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px);
     padding: 35px 40px 0;
+    overflow: scroll;
     &__message {
       padding-bottom: 46px;
       &__upper-box {
