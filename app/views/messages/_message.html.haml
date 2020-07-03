@@ -4,7 +4,7 @@
       = message.user.name
     %p.chat-main__message-list__message__upper-box__post-date
       = message.created_at.strftime("%Y年%m月%d日 %H時%M分")  
-  %p.chat-main__message-list__message__lower-box__message-tex
+  %p.chat-main__message-list__message__lower-box__message-text
     - if message.content.present?
       %p.lower-message__content
         = message.content
